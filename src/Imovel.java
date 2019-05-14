@@ -22,10 +22,14 @@ public String getTipo()
 
 public boolean Tipo(String type)
 {
-    type=tipo;
-    if((type=="casa")||(type=="apartamento")||(type=="sitio"))
-    return true;
+    
+    if((type.equals("casa"))||(type.equals("apartamento"))||(type.equals("sitio")))
+    {
         
+        tipo=type;
+        return true;
+    }    
+    
     else 
     return false;
 }
@@ -35,7 +39,6 @@ public void mostrar()
     System.out.println("Proprietário: "+this.getProprietario());
     System.out.println("Data: "+this.getDatacompra());
     System.out.println("Tipo: "+this.getTipo());    
-
 }
 
 
