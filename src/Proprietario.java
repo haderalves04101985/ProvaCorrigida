@@ -26,7 +26,7 @@ public void setDataDeNascimento(Data d)
 public void mostrar()
 {
     System.out.println("Nome: "+this.getNome());
-    System.out.println("Data: "+this.getDataDeNascimento());
+    this.dataDeNascimento.mostrar();
 }
 
 }

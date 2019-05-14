@@ -19,6 +19,22 @@ public String getTipo()
     return this.tipo;
 }
 
+public void setProprietario(Proprietario p)
+{
+    this.proprietario=p;
+}
+
+public void setDataCompra(Data d)
+{
+    this.dataCompra=d;
+}
+
+public void setTipo(String t)
+{
+    this.tipo=t;
+}
+
+
 
 public boolean Tipo(String type)
 {
@@ -36,8 +52,8 @@ public boolean Tipo(String type)
 
 public void mostrar()
 {
-    System.out.println("Proprietário: "+this.getProprietario());
-    System.out.println("Data: "+this.getDatacompra());
+    this.proprietario.mostrar();
+    this.dataCompra.mostrar();
     System.out.println("Tipo: "+this.getTipo());    
 }
 
